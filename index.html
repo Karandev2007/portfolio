@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<head>
+  <title>Karan's Personal Portfolio</title>
+
+  <meta name="description" content="Hi, I'm Karan, a passionate Full Stack Developer from India with expertise in web development. I specialize in creating responsive, user-friendly websites and web applications using HTML, CSS, JavaScript, React, Node.js, and more. Check out my portfolio showcasing personal and professional projects.">
+  <meta name="keywords" content="Full Stack Developer, Web Developer, Frontend, Backend, HTML, CSS, JavaScript, React, Node.js, Portfolio, Web Development, Software Engineer, GitHub, Personal Projects">
+  <meta name="author" content="Karan">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="stylesheet" href="css/loaders/loader.css">
+  <link rel="stylesheet" href="css/plugins.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#dcdce7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <meta name="msapplication-navbutton-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+  <!-- loader -->
+  <div id="loader" class="loader">
+    <div id="loaderContent" class="loader__content">
+      <div class="loader__shadow"></div>
+      <div class="loader__box"></div>
+    </div>
+  </div>
+  <!-- loader -->
+
+  <header id="header" class="header d-flex justify-content-between">
+
+    <!-- navigation menuu -->
+    <div class="header__navigation">
+      <nav id="menu" class="menu">
+        <ul class="menu__list d-flex justify-content-start">
+          <li class="menu__item">
+            <a class="menu__link btn" href="#home">
+              <span class="menu__caption">Home</span>
+              <i class="ph-bold ph-house-simple"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#portfolio">
+              <span class="menu__caption">Portfolio</span>
+              <i class="ph-bold ph-squares-four"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#about">
+              <span class="menu__caption">About Me</span>
+              <i class="ph-bold ph-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navigation menu -->
+
+    <!-- header control -->
+    <div class="header__controls d-flex justify-content-end">
+      <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch"
+        aria-label="light/dark mode" aria-checked="true"></button>
+      <a id="notify-trigger" class="header__trigger btn" href="mailto:karan207@proton.me">
+        <span class="trigger__caption">Connect Me</span>
+        <i class="ph-bold ph-chat-dots"></i>
+      </a>
+    </div>
+    <!-- header control -->
+
+  </header>
+
+  <!-- svg bg -->
+  <div id="svgBackground" class="svg-background">
+    <!-- top svg item -->
+    <div class="background__svg01" data-speed="0.8">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1000px" height="1000px"
+        viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+        <style type="text/css">
+          .bg01 {
+            fill: url(#color-gradient);
+          }
+        </style>
+        <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162"
+          gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" style="stop-color:#CEC4EF" />
+          <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0" />
+        </radialGradient>
+        <circle class="bg01" cx="500" cy="500" r="500" />
+      </svg>
+    </div>
+    <!-- bottom svg item -->
+    <div class="background__svg02" data-speed="0.4">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
+        viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
+        <style type="text/css">
+          .bg02 {
+            fill: url(#color-gradient-2);
+          }
+        </style>
+        <g id="Layer_1-2">
+          <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191"
+            fy="-11419.6494" gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:#CEC4EF" />
+            <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0" />
+          </radialGradient>
+          <path class="bg02"
+            d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z" />
+        </g>
+      </svg>
+    </div>
+  </div>
+  <!-- svg bg -->
+
+  <!-- avatar side block -->
+  <div id="avatar" class="avatar">
+    <div class="avatar__container d-flex flex-column justify-content-lg-between">
+      <!-- image and logo -->
+      <div class="avatar__block">
+        <div class="avatar__logo d-flex align-items-center">
+          <div class="logo__image">
+          </div>
+          <div class="logo__caption">
+            <p>Karan</p>
+          </div>
+        </div>
+        <div class="avatar__image">
+          <img src="img/avatars/avatar.png">
+        </div>
+      </div>
+      <!-- data caption #1 -->
+      <div class="avatar__block">
+        <h6>
+          <small class="top">Specialization:</small>
+          frontend developer<br>and backend developer
+        </h6>
+      </div>
+      <!-- data caption #2 -->
+      <div class="avatar__block">
+        <h6>
+          <small class="top">Based in:</small>
+          Jaipur, India
+        </h6>
+      </div>
+      <br>
+      <!-- socials and CTA button -->
+      <div class="avatar__block">
+        <div class="avatar__socials">
+          <ul class="socials-square d-flex justify-content-between">
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://github.com/Karandev2007" target="_blank"><i
+                  class="ph-bold ph-github-logo"></i></a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://discord.gg/nYUXXmBTNG" target="_blank"><i
+                  class="ph-bold ph-discord-logo"></i></a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="https://www.instagram.com/_karann79" target="_blank"><i
+                  class="ph-bold ph-instagram-logo"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- avatar side block -->
+
+  <!-- main content -->
+  <div id="content" class="content">
+    <div class="content__wrapper">
+      <!-- intro -->
+      <section id="home" class="main intro">
+
+        <!-- headline start -->
+        <div id="headline" class="headline d-flex align-items-start flex-column">
+          <h1 class="headline__title animate-headline">&nbsp;&nbsp;&nbsp;Hi! I'm Karan<br></h1>
+          <h4>
+            A Full Stack Developer from India
+            <img src="/img/icons/flag-india.png" alt="India Flag"
+              style="width: 1em; height: auto; vertical-align: middle; display: inline;" />
+          </h4>
+
+          <div class="headline__btnholder d-flex flex-column flex-sm-row">
+            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline"
+              href="#portfolio">
+              <span class="btn-caption">My Projects</span>
+              <i class="ph-bold ph-squares-four"></i>
+            </a>
+          </div>
+        </div>
+        <!-- headline end -->
+
+        <!-- scroll button -->
+        <div class="rotating-btn">
+          <a href="#portfolio" class="rotating-btn__link slide-down">
+            <!-- svg rotating text -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve"
+              class="animate-rotation" data-value="360">
+              <defs>
+                <path id="textPath"
+                  d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z" />
+              </defs>
+              <g>
+                <use xlink:href="#textPath" fill="none"></use>
+                <text>
+                  <textPath xlink:href="#textPath">Scroll for More * Scroll for More * </textPath>
+                </text>
+              </g>
+            </svg>
+            <!-- arrow icon -->
+            <i class="ph-bold ph-arrow-down"></i>
+          </a>
+        </div>
+        <!-- scroll button -->
+      </section>
+      <!-- intro -->
+
+      <!-- portfolio section -->
+      <section id="portfolio" class="inner inner-first portfolio">
+        <!-- content block title starts -->
+        <div class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Portfolio</span>
+          </p>
+          <h2 class="h2__title animate-in-up">Check out my featured projects</h2>
+        </div>
+        <!-- content block title ends -->
+
+        <!-- content block - projects start -->
+        <div class="content__block grid-block">
+          <div class="container-fluid px-0 inner__gallery">
+            <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+              <!-- projects item start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://cloud-mb39ai0u5-hack-club-bot.vercel.app/0image.png"
+                  data-image="https://cloud-mb39ai0u5-hack-club-bot.vercel.app/0image.png" class="gallery__link"
+                  itemprop="contentUrl" data-size="4400x2000">
+                  <img src="https://cloud-mb39ai0u5-hack-club-bot.vercel.app/0image.png" class="gallery__image"
+                    itemprop="thumbnail" alt="Image description">
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>Hardware Usage Moniter Discord Bot.</h5>
+                  <p class="small">A auto update Discord bot that provides system information like CPU, memory, disk
+                    usage, and more.</p>
+                </figcaption>
+              </figure>
+              <!-- projects item end -->
+
+              <!-- projects item start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://cloud-duu3v4t1u-hack-club-bot.vercel.app/0image.png" data-image="https://cloud-duu3v4t1u-hack-club-bot.vercel.app/0image.png" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="https://cloud-duu3v4t1u-hack-club-bot.vercel.app/0image.png" class="gallery__image" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Modern Weather App</h5>
+                  <p class="small">A Modern Weather App Demo - https://karandev2007.github.io/weather-app.github.io/
+                  </p>
+                </figcaption>
+              </figure>
+              <!-- projects item end -->
+
+              <!-- projects item start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/works/portfolio.png" data-image="img/works/portfolio.png" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="img/works/portfolio.png" class="gallery__image" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Karan's Personal Portfolio</h5>
+                </figcaption>
+              </figure>
+              <!-- projects item end -->
+
+              <!-- projects item start -->
+              <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://t4.ftcdn.net/jpg/02/63/83/49/360_F_263834991_Mnn2Gpw32dM11jEyoIjduze48K1idNZq.jpg" data-image="https://t4.ftcdn.net/jpg/02/63/83/49/360_F_263834991_Mnn2Gpw32dM11jEyoIjduze48K1idNZq.jpg" class="gallery__link"
+                  itemprop="contentUrl" data-size="1400x1400">
+                  <img src="https://t4.ftcdn.net/jpg/02/63/83/49/360_F_263834991_Mnn2Gpw32dM11jEyoIjduze48K1idNZq.jpg" class="gallery__image" itemprop="thumbnail"
+                    alt="Image description">
+                </a>
+                <figcaption class="gallery__descr " itemprop="caption description">
+                  <h5>Coming Soon</h5>
+                </figcaption>
+              </figure>
+              <!-- projects item end -->
+            </div>
+          </div>
+        </div>
+        <!-- content block - projects end -->
+
+      </section>
+      <!-- portfolio section end -->
+
+      <!-- about section start -->
+      <section id="about" class="inner about">
+
+        <!-- content block - section title start -->
+        <div class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>About Me</span>
+          </p>
+          <h4 class="h2__title animate-in-up">Passionate about coding, creating, and always learning. Let’s build
+            something amazing together!</h4>
+        </div>
+        <!-- content block - H2 section title end -->
+
+        <!-- achievements start -->
+        <div class="content__block grid-block">
+          <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+            <!-- achievements item -->
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number">3k+</p>
+                <p class="achievements__descr">Total served users</p>
+              </div>
+            </div>
+            <!-- achievements item -->
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number">2+</p>
+                <p class="achievements__descr">Years of experience</p>
+              </div>
+            </div>
+            <!-- achievements item -->
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number">8+</p>
+                <p class="achievements__descr">Projects Completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- achievements end -->
+
+        <!-- about me data start -->
+        <div class="content__block grid-block block-large">
+          <div class="container-fluid p-0">
+            <div class="row g-0 justify-content-between">
+
+              <!-- about me description start -->
+              <div class="col-12 col-xl-8 grid-item about-descr">
+                <p class="about-descr__text animate-in-up">
+                  Hello! I'm Karan, a passionate Full Stack Developer from India. I thrive on creating intuitive,
+                  user-friendly web applications that deliver seamless experiences. With expertise in both front-end and
+                  back-end technologies like HTML, CSS, JavaScript, React, and Node.js, I love building solutions that
+                  not only meet the needs of users but also make complex processes simpler and more enjoyable.
+                </p>
+                <p class="about-descr__text animate-in-up">
+                  When I'm not coding, you can find me exploring new technologies, solving puzzles, or working on
+                  personal projects. I believe in continuous learning, and I'm always excited to connect with others in
+                  the tech community. Let's create something great together and bring innovative ideas to life!
+                </p>
+              </div>
+              <!-- about me description end -->
+
+              <!-- about me info start -->
+              <div class="col-12 col-xl-4 grid-item about-info">
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Name</small>
+                    Karan
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Email</small>
+                    <a class="text-link-bold"
+                      href="mailto:karan207@proton.me?subject=Message%20from%20your%20site&body=Hello%20Karan,%0D%0A%0D%0AI%20hope%20you're%20doing%20well.%20I%20came%20across%20your%20site%20and%20wanted%20to%20reach%20out.%20%0D%0A%0D%0A[Your%20message%20here]%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]">karan207@proton.me</a>
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Location</small>
+                    <a class="text-link-bold">Jaipur, India</a>
+                  </h6>
+                </div>
+              </div>
+              <!-- about me info end -->
+            </div>
+          </div>
+        </div>
+        <!-- about me data end -->
+      </section>
+      <!-- about me end -->
+
+
+    </div>
+
+    <!-- about section end -->
+
+    <div class="content__block">
+      <div class="section-h3 section-h3-grid">
+        <h3 class="h3__title animate-in-up">My favourite tools</h3>
+      </div>
+    </div>
+
+
+
+    <div class="content__block grid-block block-large">
+      <div class="tools-cards d-flex justify-content-start flex-wrap">
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">VS Code</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://user-images.githubusercontent.com/92434610/137111602-71118494-37cb-46a7-870f-e80716f72286.png"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Termius</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://camo.githubusercontent.com/4374f0b29a45f7d158ec8fe94398eb90f4ac94c03d6b99346b99e916e5157cb9/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f706e672f6769746875622e706e67"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Github</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/800px-Github-desktop-logo-symbol.svg.png"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Github Desktop</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://static-00.iconduck.com/assets.00/postman-icon-248x256-ik126so4.png" alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Postman</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up" src="img/icons/icon-figma.svg" alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up" src="img/icons/icon-blender.svg" alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Blender</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobT6Nq7W-FJnK5lLapZlwySLwB0W4sKCYDg&s"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">ChatGPT</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up"
+              src="https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png"
+              alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Discord</h6>
+          </div>
+        </div>
+
+        <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+          <div class="tools-cards__card">
+            <img class="tools-cards__icon animate-in-up" src="img/icons/icon-notion.svg" alt="Tools Icon">
+            <h6 class="tools-cards__caption animate-in-up">Notion</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__block">
+        <div class="teaser">
+          <p class="teaser__text animate-in-up">Want to know more about me, tell me
+            about your project or just to say hello?
+            <a class="text-link-bold" href="mailto:karan207@proton.me">Drop me a line</a>
+            and I'll get back
+            as soon as possible.
+          </p>
+        </div>
+      </div>
+      <!-- content block - teaser end -->
+
+
+      <!-- lcoation and email info here -->
+
+      <div class="content__block">
+        <div class="container-fluid p-0 contact-lines animate-in-up">
+          <div class="row g-0 contact-lines__item">
+
+            <div class="col-12 col-md-4 contact-lines__data">
+              <p class="contact-lines__title animate-in-up">Location</p>
+              <p class="contact-lines__text animate-in-up">
+                <a class="text-link-bold">Jaipur, India</a>
+              </p>
+            </div>
+
+            <div class="col-12 col-md-4 contact-lines__data">
+              <p class="contact-lines__title animate-in-up">Email</p>
+              <p class="contact-lines__text animate-in-up">
+                <a class="text-link-bold" href="mailto:karan207@proton.me">karan207@proton.me</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lcoation and email info here -->
+      </section>
+      <!-- main content end -->
+
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+          <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+          </div>
+          <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+              <div class="pswp__counter"></div>
+              <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+              <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+              <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+              <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+              <div class="pswp__preloader">
+                <div class="pswp__preloader__icn">
+                  <div class="pswp__preloader__cut">
+                    <div class="pswp__preloader__donut"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+              <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+              <div class="pswp__caption__center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- scripts -->
+      <script src="js/libs.min.js"></script>
+      <script>
+        const content = document.querySelector('body');
+        const imgLoad = imagesLoaded(content);
+        imgLoad.on('done', instance => {
+          setTimeout(() => {
+            document.getElementById("svgBackground").classList.add("loaded");
+          }, "1000");
+        });
+      </script>
+      <script src="js/app.js"></script>
+      <script src="js/gallery-init.js"></script>
+      <!-- scripts -->
+
+</body>
+
+</html>
+
